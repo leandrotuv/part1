@@ -1,0 +1,690 @@
+body {
+    background-image: url('https://w.forfun.com/fetch/85/855b1135ca8998149c1976a0b8661fca.jpeg');
+    background-size: cover; /* Para que la imagen cubra todo el fondo */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  
+  .color {
+    color: #071ef1;;
+  }
+  
+  .color1 {
+    color: #1c03ff;
+  }
+  
+
+.timer-container {
+	text-align: center;
+
+}
+
+.timer {
+	font-size: 48px;
+	font-weight: bold;
+	color: rgb(7, 70, 243);
+} 
+
+  body {
+    font-family: 'Arial', sans-serif;
+    font-size: 3vw;
+    color: rgb(10, 7, 241);
+    text-shadow: 1px 1px 1px rgb(94, 27, 27);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 8vw;
+    }
+  }
+  .line-separator {
+    width: 100%;
+    height: 4px;
+    background-color: #0d09f8; /* Color de la línea */
+    margin: 20px 0; /* Espacio alrededor de la línea */
+    position: relative;
+  }
+  
+  .line-separator::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 50px; /* Longitud de los extremos decorativos */
+    height: 4px;
+    background-color: #ffd900; /* Color de la línea */
+  }
+  
+  .line-separator::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 50px; /* Longitud de los extremos decorativos */
+    height: 4px;
+    background-color: #e6d00a; /* Color de la línea */
+  }
+  .social-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #def512; /* Color del texto de los enlaces */
+    font-weight: bold;
+}
+
+.social-link:hover {
+    color: #e6082d; /* Cambiar color al pasar el ratón por encima */
+}
+.social-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0919f7; /* Color de fondo del menú */
+  padding: 10px 0;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+.separator {
+  color: #4df30b; /* Color de las líneas separadoras */
+  margin: 0 5px; /* Espacio entre las líneas y el texto */
+}
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+img {
+  border: 2px solid #1406df; /* Ancho del borde y color */
+  border-radius: 15px; /* Radio de los bordes para que sean redondeados */
+  box-shadow: 0 0 10px rgba(16, 46, 212, 0.2); /* Sombra suave alrededor de la imagen */
+}
+body {
+  margin: 0;
+ /* overflow: hidden; */
+}
+
+body {
+  margin: 0;
+  /*overflow: hidden; */
+}
+body {
+  margin: 0;
+  /*  overflow: hidden; */
+}
+
+body {
+  margin: 0;
+  /*overflow: hidden;*/
+}
+/* juego de horcado */
+.section-juego-ahorcado{
+  display: none;
+  height: 92vh;
+  margin: auto;
+}
+
+.ahorcado-img-palabra{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.palabras-info{
+  margin: 1.5rem;
+}
+.div-imagen-ahorcado{
+  height: 25vh;
+}
+.imagen-ahorcado{
+  height: 100%;
+}
+.intentos-text, .span-pista, .intentos-finjuego{
+  font-size: 1.6rem;
+}
+#palabra-a-adivinar{
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 1.5rem 0;
+}
+
+.div-palabra,.div-pista-botones, .div-abecedario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.div-pista-botones{
+  width: 100%;
+}
+.botones-juego{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.letras-abecedario{
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 100%;
+  justify-content: space-evenly;
+}
+#btn-letra{
+  height: 4.5rem;
+  width: 4.5rem;
+  font-family:'Raleway',sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  border: none #2b2b2b99 2px;
+  border-radius: 1rem;
+  background-color: transparent;
+  margin: 0.4rem 0.3rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem #2b2b2b80;
+  
+}
+#btn-letra:active{
+  box-shadow: inset 0.1rem 0.1rem 0.5rem #2b2b2b80;
+  border: none #2b2b2b80 2px;
+}
+
+#palabra-a-adivinar p{
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+}
+
+.palabra-sola{
+  letter-spacing: 1.5rem;
+}
+/* juego nemo*/
+.section-juego-memoria{
+  display: none;
+  margin: auto;
+  height: 90vh;
+}
+.secciones-memoria{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.tabla-memoria{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 75rem;
+}
+.btn-memo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17vw;
+  height: 17vw;
+  max-width: 11rem;
+  max-height: 11rem;
+  color: #2b2b2b;
+  font-weight: 300;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  background-color: #2b2b2b99;
+  margin: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem #2b2b2b80;
+
+}
+.btn-memo:hover{
+  cursor: pointer;
+}
+.btn-memo:active{
+  box-shadow: inset 0.1rem 0.1rem 0.5rem #2b2b2b80;
+  border: none #2b2b2b20 2px;
+}
+
+.section2-memoria{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin:0;
+  height: 30%;
+}
+.estadisticas{
+  font-size: 1.8rem;
+  margin: 0.6rem;
+  text-align: center;
+}
+.botones-memo{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.nuevo-memo {
+  visibility:hidden;
+  cursor: pointer;
+
+}
+.volver-memo, .nuevo-memo{
+  border: ridge #2b2b2b50 1px;
+  background-color: #2b2b2b10;
+  margin: 0.4rem 0.3rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem #2b2b2b80;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+
+}
+.volver-memo:active, .nuevo-memo:active{
+  border: none #2b2b2b80 2px;
+}
+/* inicio de pantalla */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html{
+  font-size:62.5%;
+  font-family:'Raleway',sans-serif;
+  color:#2b2b2b;
+  box-sizing:border-box;
+}
+
+body{
+  background: linear-gradient(138deg, rgba(139, 245, 231, 0.6) 34%, rgba(136, 12, 63, 0.6) 100%) center center no-repeat fixed;
+  /* background-image: url('img/Background.webp') ; */
+  background-size: cover;
+  height: auto;
+}
+main{
+  width: 90vw;
+  height: 100%;
+  margin: auto;
+  font-size: 1.4rem;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+}
+.pantalla-inicial{
+  justify-content: space-between;
+  height: 90vh;
+}
+h1{
+  font-family: 'Raleway', 'cursive';
+  font-size: 5.7vw;
+  margin:1rem 0rem;
+  font-weight: 300;
+  margin-top: 3rem;
+}
+#nyk{
+  font-family: 'White Star Free', 'cursive';
+  font-size: 10vw;
+  margin:1rem 0rem;
+}
+.seleccion-pareja{
+  width: 100%;
+}
+.seleccion-juegos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h3{
+  font-size: 4vw;
+  margin-bottom: 1rem;
+}
+.btn{
+  font-family:'Raleway',sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  border: ridge #2b2b2b99 2px;
+  border-radius: 1rem;
+  background-color: transparent;
+  height: 5rem;
+  width: 90%;
+  margin: 0.6rem 0px;
+  box-shadow: 0.15rem 0.15rem 0.5rem #2b2b2b80;
+}
+.btn2{
+  width: 31.5%;
+  border: ridge #2b2b2b50 1px;
+  background-color: #2b2b2b10;
+  margin: 0.4rem 0.3rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem #2b2b2b80;
+}
+.btn:active{
+  box-shadow: inset 0.1rem 0.1rem 0.5rem #2b2b2b80;
+  border: ridge #2b2b2b80 2px;
+}
+.btn2:active{
+  border: none #2b2b2b80 2px;
+}
+.btn2:disabled, #btn-letra:disabled{
+  box-shadow: inset 0.1rem 0.1rem 0.5rem #2b2b2b80;
+  border: none #2b2b2b20 2px;
+}
+.h2juegos{
+  font-size: 2.4rem;
+  margin:1rem 0rem;
+  text-align: center;
+  font-family: 'Raleway', 'cursive';
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 3rem;
+}
+
+.div-pareja{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.pareja{
+  height: 35vh;
+}
+.puntaje-total{
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.puntaje-aclaracion{
+  margin: 1rem 0;
+}
+.sobre-estos-juegos{
+  margin: 1.5rem 0;
+  cursor: pointer;
+}
+.section-sobre{
+  width:100%;
+  height:auto;
+  display: none;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+}
+.section-sobre p{
+  line-height: 2rem;
+}
+.presentacion-form{
+  width:100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 2rem auto;
+  font-style: italic;
+}
+.inputs{
+  width: 100%;
+  text-align: center;
+}
+input, textarea{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  border: ridge #2b2b2b28 2px;
+  border-radius: 0.8rem;
+  background-color: transparent;
+  height: 4rem;
+  width: 100%;
+  margin: 0.6rem 0px;
+  box-shadow: 0.05rem 0.05rem 0.3rem #2b2b2b80;
+  resize: none;
+  padding: 0.5rem 1rem;
+}
+textarea{
+  height: 8rem;
+  padding: 1rem;
+}
+.enviar-form{
+  width: 100%;
+  height: 4rem;
+}
+.volver-sobre{
+  margin: 2rem 0;
+}
+.none{
+  display: none;
+}
+div1 {
+  text-align: center; /* Centra el video */
+  margin-bottom: 20px; /* Espacio debajo del video */
+}
+/* queries carpeta */
+@media screen and (orientation:landscape){
+  body{
+      height: 85vh;
+  }
+  main{
+      height: 100%;
+      width: 85vw;
+      justify-content: space-between;
+  }
+  h1{
+      font-size: 3vw;
+      display: block;
+  }
+  #nyk{
+      font-size: 4.5vw;
+  }
+  .pantalla-inicial{
+      display: flex;
+  }
+  h3{
+      font-size: 2rem;
+  }
+  .seleccion-pareja{
+      display: flex;
+      justify-content: center;
+  }
+  .seleccion-juegos{
+      width: 50%;
+  }
+  .btn{
+      height: 4rem;
+  }
+  .div-pareja{
+      width: 30%;
+      height: 100%;
+  }
+  .pareja{
+      max-height:20rem ;
+      height: 100%;
+  }
+  .sobre-estos-juegos{
+      margin-bottom: 3rem;
+      width: fit-content;
+      align-self: center;
+  }
+
+  .section-juego-ahorcado{
+      height: 90%;
+  }
+
+  .ahorcado-img-palabra{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .img-palabra-pista{
+      width: 80%;
+      justify-content: space-evenly;
+      display: flex;
+      flex-direction: row;
+
+  }
+  .div-imagen-ahorcado{
+      width: 40%;
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .div-palabra{
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #btn-letra{
+      height: 4rem;
+      width: 4rem;       
+  }
+
+
+  .section-juego-memoria{
+      height: 100%;
+      align-items: center;
+  }
+  .section-juego-memoria h2, .section-quiz-novios h2{
+      margin-bottom: 0;
+  }
+
+  .secciones-memoria{
+      flex-direction: row;
+      width: 80%;
+  }
+  .section1-memoria{
+      justify-content: flex-start;
+      width: 100%; 
+  }
+
+  .tabla-memoria{
+      width: 90%; 
+  }
+  .div-btn-memo{
+      max-height: 12rem;
+  }
+  .btn-memo{
+      width: 15vh;
+      height: 15vh;
+      max-width: 11rem;
+      max-height: 11rem;
+  }
+  .section2-memoria{
+      justify-content: center;
+      width: 50%;
+      height: 70vh;
+  }
+  .nuevo-memo, .volver-memo{
+      width: 100%;
+      height: 4rem;
+  }
+  .estadisticas{
+      height: 5rem;
+  }
+
+  .secciones-quiz p{
+      margin: 0;
+      height: 2.5rem;
+  }
+
+  .section-quiz-novios, .fin-quiz{
+      height: 85vh;
+  }
+
+  .section-quiz-novios .btn, .fin-quiz .btn{
+      width: 40%;
+      height: 3.7rem;
+  }
+
+  .presentacion-form{
+      flex-direction: row;
+  }
+  .presentacion-form p{
+      display: flex;
+      justify-self: center;
+      text-align: center;
+      font-size: 1.4rem;
+      margin: 0.5rem 0;
+  }
+  form{
+      width: 60%;
+      font-size: 1.4rem;
+      margin: 0.8rem auto;
+  }
+  .enviar-form{
+      height: 3.5rem;
+  }
+  .inputs{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+  }
+  .label-input{
+      width: 48%;
+  }
+
+  input, textarea{
+      height: 3.5rem;
+      width: 100%;
+  
+  }
+  textarea{
+      height: 5rem;
+      padding: 1rem;
+  }
+
+  .volver-sobre{
+      width: 40%;
+      height: 4rem;
+  }
+
+  
+
+}
+@media screen and (orientation:landscape){
+
+}
+
+
+
+
+
+
+
+
+
+
+  
+  
+
